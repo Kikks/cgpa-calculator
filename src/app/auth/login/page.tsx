@@ -7,11 +7,11 @@ import { EyeClosedIcon, EyeOpenIcon } from '@radix-ui/react-icons';
 import Link from 'next/link';
 import { Checkbox } from '@/components/ui/checkbox';
 import { Button } from '@/components/ui/button';
-import { Apple, GalleryThumbnailsIcon, Twitter } from 'lucide-react';
 import { UserContext } from '@/context/user';
 import { isEmpty, validateLoginPayload } from '@/lib/validators';
 import { useRouter } from 'next/navigation';
 import toast from 'react-hot-toast';
+import { AppleIcon, GoogleIcon, TwitterIcon } from '@/components/shared/icons';
 
 const initialState = {
   email: '',
@@ -167,19 +167,25 @@ export default function Login() {
         <p className="mx-auto text-center text-sm">Or login with:</p>
 
         <div className="grid grid-cols-1 gap-3 md:grid-cols-3">
-          <Button variant="outline" className="col-span-1">
-            <GalleryThumbnailsIcon className="mr-3" />
-            <span>Google</span>
+          <Button variant="outline" className="col-span-1 flex items-center">
+            <div className="mr-3">
+              <GoogleIcon />
+            </div>
+            <p>Google</p>
           </Button>
 
-          <Button variant="outline" className="col-span-1">
-            <Apple className="mr-3" />
-            <span>Apple</span>
+          <Button variant="outline" className="col-span-1 flex items-center">
+            <div className="mr-3">
+              <AppleIcon />
+            </div>
+            <p>Apple</p>
           </Button>
 
-          <Button variant="outline" className="col-span-1">
-            <Twitter className="mr-3" />
-            <span>Twitter</span>
+          <Button variant="outline" className="col-span-1 flex items-center">
+            <div className="mr-3">
+              <TwitterIcon />
+            </div>
+            <p>Twitter</p>
           </Button>
         </div>
       </div>

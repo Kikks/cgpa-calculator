@@ -1,5 +1,4 @@
 import type { Metadata } from 'next';
-import { Roboto } from 'next/font/google';
 
 import { cn } from '@/lib/utils';
 
@@ -9,12 +8,7 @@ import { toastOptions } from '@/lib/toaster';
 import { Toaster } from 'react-hot-toast';
 import { UserProvider } from '@/context/user';
 import { GradeProvider } from '@/context/grade';
-
-export const fontSans = Roboto({
-  weight: ['400', '500', '700', '900'],
-  subsets: ['latin'],
-  variable: '--font-sans',
-});
+import { fontSans } from '@/lib/fonts';
 
 export const metadata: Metadata = {
   title: 'CGPA Calculator',
