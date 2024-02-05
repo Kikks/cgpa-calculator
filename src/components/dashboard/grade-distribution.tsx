@@ -2,8 +2,12 @@
 import { GradeContext } from '@/context/grade';
 import useMediaQuery from '@/hooks/useMediaQuery';
 import { ApexOptions } from 'apexcharts';
+import dynamic from 'next/dynamic';
 import { FC, useContext, useEffect, useState } from 'react';
-import ReactApexChart from 'react-apexcharts';
+
+const ReactApexChart = dynamic(() => import('react-apexcharts'), {
+  ssr: false,
+});
 
 interface GradeDistributionProps {
   className?: string;
