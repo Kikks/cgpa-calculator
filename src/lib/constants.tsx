@@ -11,16 +11,16 @@ export const navLinks = [
     title: 'Summary',
     Icon: FoldersIcon,
   },
-  {
-    url: '/dashboard/profile',
-    title: 'Profile',
-    Icon: UserIcon,
-  },
-  {
-    url: '/dashboard/contact',
-    title: 'Contact Us',
-    Icon: PhoneIcon,
-  },
+  // {
+  //   url: '/dashboard/profile',
+  //   title: 'Profile',
+  //   Icon: UserIcon,
+  // },
+  // {
+  //   url: '/dashboard/contact',
+  //   title: 'Contact Us',
+  //   Icon: PhoneIcon,
+  // },
 ];
 
 export const fivePointGrades = [
